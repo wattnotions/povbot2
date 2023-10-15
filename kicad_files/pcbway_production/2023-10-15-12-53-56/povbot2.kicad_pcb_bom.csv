@@ -1,0 +1,20 @@
+﻿designator,quantity,value,pack,mpn,mount_type
+C1,1,22u,C_0603_1608Metric,,smt
+"C10, C11, C12",3,22u,C_0805_2012Metric,,smt
+C13,1,10n,C_0603_1608Metric,,smt
+C2,1,0.1uF,C_0603_1608Metric,,smt
+"C6, C7",2,4.7uF,C_0603_1608Metric,,smt
+"C8, C9",2,10uF,C_0603_1608Metric,,smt
+D1,1,LED,LED_0603_1608Metric,,smt
+"D2, D3",2,D_Schottky,D_SOD-323,SBA120CS_R1_00001,smt
+J1,1,GPIO,PinSocket_2x20_P2.54mm_Vertical,61304021121,tht
+"J4, J5, J6",3,Conn_01x02,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,B2B-PH-K-S,tht
+J7,1,USB_B_Micro,USB_Micro-B_Molex_47346-0001,0473460001,smt
+L1,1,1uH,IND_SRP4020TA-1R0M,SRP4020TA-1R0M,smt
+"MH1, MH2, MH3, MH4",4,MountingHole_2.7mm_M2.5,MountingHole_2.7mm_M2.5,,tht
+R1,1,1M,R_0603_1608Metric,,smt
+R5,1,470R,R_0603_1608Metric,,smt
+R6,1,2k,R_0603_1608Metric,,smt
+U1,1,TPS61232DRC,Texas_S-PVSON-N10_ThermalVias,TPS61232DRCR,smt
+U4,1,MCP73831-2ACI_MC,SON50P200X300X100-9N,MCP73831-2ACI/MC,tht
+U5,1,TB6612FNG,SSOP-24_5.3x8.2mm_P0.65mm,"TB6612FNG,C,8,EL",smt

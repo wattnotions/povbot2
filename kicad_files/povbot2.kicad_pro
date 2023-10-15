@@ -129,7 +129,7 @@
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -173,7 +173,14 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.0,
+        0.0,
+        0.15,
+        0.175,
+        0.2,
+        0.25,
+        0.35
       ],
       "via_dimensions": [
         {
@@ -458,9 +465,9 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "povbot2.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "povbot_pcb.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -502,7 +509,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
