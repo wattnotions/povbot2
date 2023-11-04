@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, Response
 import threading
+import RPi.GPIO as GPIO
 import io
 import picamera
 import logging
@@ -8,11 +9,62 @@ from threading import Condition
 app = Flask(__name__)
 CORS(app)  # This will enable CORS for all routes
 
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(22, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)
+GPIO.setup(17, GPIO.OUT)
+GPIO.setup(27, GPIO.OUT)
+
+
+GPIO.output(22, GPIO.LOW)
+GPIO.output(23, GPIO.LOW)
+GPIO.output(17, GPIO.LOW)
+GPIO.output(27, GPIO.LOW)
+
+def forward():
+    GPIO.output(22, GPIO.LOW)  #left side
+    GPIO.output(23, GPIO.HIGH)
+    
+    GPIO.output(17, GPIO.HIGH) #right side
+    GPIO.output(27, GPIO.LOW)
+    
+def stop():
+    GPIO.output(22, GPIO.LOW)  
+    GPIO.output(23, GPIO.LOW)
+    
+    GPIO.output(17, GPIO.LOW) 
+    GPIO.output(27, GPIO.LOW)
+    
+def right():
+    GPIO.output(22, GPIO.LOW)  
+    GPIO.output(23, GPIO.HIGH)
+    
+    GPIO.output(17, GPIO.LOW) 
+    GPIO.output(27, GPIO.HIGH)
+    
+def left():
+    GPIO.output(22, GPIO.HIGH)  
+    GPIO.output(23, GPIO.LOW)
+    
+    GPIO.output(17, GPIO.HIGH) 
+    GPIO.output(27, GPIO.LOW)
+
+
+
 @app.route('/key', methods=['GET'])
 def get_key():
     key = request.args.get('key')
     if key:
         print(f'Key Pressed: {key}')
+        # Check which key is pressed and set GPIO pins accordingly
+        if key == 'W':
+            forward()
+        elif key == 'A':
+            left()
+        elif key == 'S':
+            stop()
+        elif key == 'D':
+            right()
     return '', 200
 
 @app.route('/')
