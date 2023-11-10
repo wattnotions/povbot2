@@ -37,4 +37,3 @@ I made a short video explaining the project. It is available here:
 
 [Watch the video](https://www.youtube.com/watch?v=tIp2PrZHXOc)
 
-Click the link above to watch the video.
