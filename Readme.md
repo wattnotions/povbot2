@@ -1,9 +1,9 @@
-#POVbot - A Small Pi Zero FPV Robot
+# POVbot - A Small Pi Zero FPV Robot
 
 <img src="https://github.com/wattnotions/povbot2/assets/7674300/4a9fc191-8f11-4aae-98d8-992cb4aad427" alt="Alt Text" width="200" height="150">
 
 
-##3d Print Files
+## 3d Print Files
 
 Look in 3d_print folder to find a 3mf file with the chassis , camera holder and wheels ready to print.
 
