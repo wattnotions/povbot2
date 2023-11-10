@@ -30,3 +30,11 @@ For example : 192.168.0.186:8000 and you should see your video stream. The robot
 The hat was designed in Kicad 7. All project files are in kicad_files.
 
 The board was made and assembled by PCBway. If you wish to get your own board assembled using PCBway look in kicad_files/pcbway_production for all of the required PCB manufacture and assembly files, ready for upload to JLCPCB.
+
+## Youtube video
+
+I made a short video explaining the project. It is available here:
+
+[Watch the video](https://www.youtube.com/watch?v=tIp2PrZHXOc)
+
+Click the link above to watch the video.
